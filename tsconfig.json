@@ -1,0 +1,25 @@
+{
+    "include": ["./src/**/*.tsx", "./src/**/*.ts"],
+    "exclude": ["./node_modules/*"],
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "importHelpers": true,
+        "removeComments": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "jsx": "react-jsx",
+        "baseUrl": ".",
+        "paths": {
+            "@": ["./src"],
+            "@/*": ["./src/*"],
+        },
+
+        "plugins": [{
+            "name": "typescript-plugin-css-modules",
+        }],
+
+        "esModuleInterop": true,
+        "resolveJsonModule": true
+    }  
+}
